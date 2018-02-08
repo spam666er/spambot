@@ -1,6 +1,7 @@
 package SpamSender;
 
 import Google.GoogleMainPage;
+import Utilities.Utils;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterTest;
@@ -35,8 +36,8 @@ public class SpamSender {
 
                 .clickOnComposeButton()
                 .enterRecepient("spam666catcher@gmail.com")
-                .enterSubject("Subject")
-                .enterMessage("Message")
+                .enterSubject(Utils.getRandomData("titles"))
+                .enterMessage(Utils.getRandomData("messages"))
                 .clickSendMessage();
     }
 
