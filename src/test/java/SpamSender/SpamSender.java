@@ -34,7 +34,7 @@ public class SpamSender {
                 .clickNextButtonAfterPassword()
 
                 .clickOnComposeButton()
-                .enterRecepient("spam666catcher@gmail.pl")
+                .enterRecepient("spam666catcher@gmail.com")
                 .enterSubject("Subject")
                 .enterMessage("Message")
                 .clickSendMessage();
