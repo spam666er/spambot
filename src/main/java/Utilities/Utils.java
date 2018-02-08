@@ -13,7 +13,8 @@ public class Utils {
         try {
             File file = new File("src/main/resources/Data/" + type + ".txt");
             lines = FileUtils.readLines(file, "UTF-8");
-            return lines.get(getRandomInt(lines.size()));
+            int lineInTxtFile = getRandomInt(lines.size());
+            return lines.get(lineInTxtFile);
         } catch (IOException e) {
             return e.getMessage();
         }
