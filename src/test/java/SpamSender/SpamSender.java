@@ -34,9 +34,9 @@ public class SpamSender {
                 .clickNextButtonAfterPassword()
 
                 .clickOnComposeButton()
-                .enterRecepient("sylwia.gryglicka@o2.pl")
-                .enterSubject("OTWORZ MNIE !!! :D")
-                .enterMessage("KOCHAM CIE WARIATKO XDXD <3333333 :*****")
+                .enterRecepient("spam666catcher@gmail.pl")
+                .enterSubject("Subject")
+                .enterMessage("Message")
                 .clickSendMessage();
     }
 
