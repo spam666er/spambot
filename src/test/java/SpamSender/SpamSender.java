@@ -42,6 +42,6 @@ public class SpamSender {
 
     @AfterTest
     public void tearDown() {
-        //driver.quit();
+        driver.quit();
     }
 }
