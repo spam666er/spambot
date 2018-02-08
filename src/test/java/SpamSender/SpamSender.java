@@ -9,6 +9,8 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
+import static Utilities.Utils.getRandomInt;
+
 public class SpamSender {
 
     private WebDriver driver;
@@ -34,6 +36,7 @@ public class SpamSender {
 
     @Test(dataProvider = "emailsList")
     public void SpamSenderTest(String email) {
+        int line = getRandomInt(10);
         googleMainPage
                 .clickOnGmailMailboxbutton()
                 .clickOnSignInButton()
@@ -45,8 +48,8 @@ public class SpamSender {
 
                 .clickOnComposeButton()
                 .enterRecepient(email)
-                .enterSubject(Utils.getRandomData("titles"))
-                .enterMessage(Utils.getRandomData("messages"))
+                .enterSubject(Utils.getRandomData("titles", line))
+                .enterMessage(Utils.getRandomData("messages", line))
                 .clickSendMessage();
     }
 
