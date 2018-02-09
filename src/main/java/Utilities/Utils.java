@@ -20,6 +20,6 @@ public class Utils {
     }
 
     public static int getRandomInt(int max) {
-        return (int)(Math.random() * max + 1);
+        return (int)(Math.random() * max);
     }
 }
