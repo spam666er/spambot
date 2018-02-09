@@ -30,7 +30,8 @@ public class SpamSender {
     public static Object[][] emailsList() {
         return new Object[][] {
                 {"edwarddziaslo123@gmail.com"},
-                {"spam666catcher@gmail.com"}
+                {"spam666catcher@gmail.com"},
+                {"henrykka53@wp.pl"}
         };
     }
 
