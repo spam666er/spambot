@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="SMS spam bot Suite">
+    <test name="Spam by SMS">
+        <classes>
+            <class name="SpamSender.SmsSpam"/>
+        </classes>
+    </test>
+</suite>

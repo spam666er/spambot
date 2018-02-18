@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
-<suite name="Main Test Suite">
-    <test name="Spam">
+<suite name="Email spam bot Suite">
+    <test name="Spam by Email">
         <classes>
             <class name="SpamSender.SpamSender"/>
         </classes>

@@ -28,7 +28,7 @@ public class WebElementManipulator {
         waitUntilElementIsClickable(element);
     }
 
-    private void waitUntilElementIsVisible(WebElement element) {
+    public void waitUntilElementIsVisible(WebElement element) {
         wait.until(ExpectedConditions.visibilityOf(element));
     }
 
