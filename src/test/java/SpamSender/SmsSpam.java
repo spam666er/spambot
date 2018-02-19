@@ -39,8 +39,7 @@ public class SmsSpam {
                 .enterNumber(number)
                 .enterMessage(Utils.getRandomData("quotes", getRandomInt(4)))
                 .enterSender("M")
-                .clickSendButton()
-                .confirmSendedSms();
+                .clickSendButton();
     }
 
     @AfterMethod

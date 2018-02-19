@@ -6,7 +6,6 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-import org.testng.Assert;
 
 public class SmsPriv extends WebElementManipulator {
 
@@ -24,9 +23,6 @@ public class SmsPriv extends WebElementManipulator {
 
     @FindBy(xpath = "//a[@class='accept']")
     private WebElement acceptCookiePolicyButton;
-
-    @FindBy(xpath = "//div[@id='big-ok']")
-    private WebElement confirmationElement;
 
     public SmsPriv(WebDriver driver) {
         super(driver);
@@ -61,14 +57,4 @@ public class SmsPriv extends WebElementManipulator {
         clickOnWebElement(sendButton);
         return this;
     }
-
-    public SmsPriv confirmSendedSms() {
-        waitUntilElementIsVisible(confirmationElement);
-        Assert.assertEquals(confirmationElement.getText(), "SMS został wysłany",
-                "confirmSendedSms");
-        return this;
-    }
-
-
-
 }
