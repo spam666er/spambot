@@ -19,5 +19,6 @@ dependencies {
 test {
     useTestNG {
         suites 'src/test/resources/suites/testng_email.xml'
+        suites 'src/test/resources/suites/testng_sms.xml'
     }
 }
